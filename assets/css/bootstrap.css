@@ -2599,7 +2599,7 @@ textarea.form-control-lg {
   overflow: hidden;
   text-align: start;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: pre-line;;
   pointer-events: none;
   border: var(--bs-border-width) solid transparent;
   transform-origin: 0 0;
