@@ -67,6 +67,8 @@
     }
   </style>
 
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/list-groups.css" rel="stylesheet">
 
 </head>
 
@@ -98,9 +100,72 @@
   </header>
 
   <main>
-    <div class="container marketing">
 
-      <div class="row featurette mt-5 mb-5">
+    
+    <div class="container marketing">
+      <h1 class="text-center" >Tous mes jeux de game jams</h1>
+      <div class="list-group mt-5 mb-5 mx-auto w-50">
+        <h3 class="text-center">Sommaire</h3>
+        <a href="#NeonDice" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h5 class="mb-0">Neon Dice</h5>
+              <p class="mb-0 opacity-75">Game Maker's ToolKit Game Jam 2022</p>
+            </div>
+          </div>
+        </a>
+        <a href="#Accellere" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h5 class="mb-0">AcCELLère</h5>
+              <p class="mb-0 opacity-75">Scientific Game Jam 2022</p>
+            </div>
+          </div>
+        </a>
+        <a href="#Geckolot" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h5 class="mb-0">Geckolot</h5>
+              <p class="mb-0 opacity-75">Global Game Jam 2022</p>
+            </div>
+          </div>
+        </a>
+        <a href="#MonsterCleaner" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h5 class="mb-0">Monster Cleaner</h5>
+              <p class="mb-0 opacity-75">Unijam 2022</p>
+            </div>
+          </div>
+        </a>
+        <a href="#FlyMeToTheMoon" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h5 class="mb-0">Fly Me To The Moon*</h5>
+              <p class="mb-0 opacity-75">Unijam 2021</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+    <div class="row featurette mt-5 mb-5" id="NeonDice">
+      <h1>
+        Neon Dice
+      </h1>
+      <h4>Game Maker's Toolkit Game Jam</h4>
+      <h4>15 juillet - 17 juillet 2022</h4>
+      <div class="col-md-6">
+        <p>La GMTK Game Jam est une game jam organisée chaque année par le vidéaste Mark Brown, créateur de la chaîne YouTube <i>Game Maker's Tool Kit</i>, axée sur le <i>game design</i>. Depuis sa première édition en 2017, elle attire chaque année plus de participants, au point de devenir une des principales game jams sur la plateforme itch.io. Le thème de cette édition était <b>"Roll of the Dice"</b>.</p>
+        <p>Le jeu réalisé durant cette game jam est Neon Dice, un shooter en vue du dessus, coopératif en multijoueur local. Deux joueurs incarnent des dés qui doivent traverser un donjon et y affronter des ennemis à l'aide de leurs capacités, qui sont déterminés par la face sur laquelle ils sont actuellement. À tout moment, un joueur peut s'élancer vers l'autre, qui le projette en l'air pour le faire atterrir sur une nouvelle face, et ainsi obtenir aléatoirement un nouveau pouvoir complètement rechargé.</p>
+        <p>Ce jeu a été réalisé avec mes camarades du CELL, le club de Création de Jeux de Télécom SudParis et de l'Institut Mines-Télécom Business School. Cette game jam a été pour moi l'occasion de mettre en pratique les connaissances acquises durant le stage et durant ma troisième année à Télécom SudParis, pour jouer le rôle de lead développeur, pour décider de quelle architecture de code employer afin de pouvoir implémenter plus facilement les pouvoirs. Une fois la game jam finie, nous avons continué à travailler sur ce projet avec un ami pour le peaufiner.</p>
+      </div>
+      <div class="col-md-6">
+        <iframe height="167" frameborder="0" src="https://itch.io/embed/1620893" width=100%><a href="https://flegmatik-surf.itch.io/neon-dice">Neon dice by Flegmatik_surf, Sulray, Akasuna, GuillaumeCx, Guit0u, BowRaiders, kohuro, pitchinpingouin</a></iframe>
+        <a href="game-jams.html" class="btn btn-primary w-100">Dépôt GitHub</a>
+      </div>
+    </div>
+
+      <div class="row featurette mt-5 mb-5" id="Accellere">
         <h1>
           AcCELLère
         </h1>
@@ -112,13 +177,13 @@
             <p>Cette game jam particulière m'a permis de travailler avec des personnes de profils complètement différents, puisque certains participants étaient amateurs dans leur poste lors de la game jam.</p>
           </div>
           <div class="col-md-6">
-            <iframe height="167" frameborder="0" src="https://itch.io/embed/1448850" width="552"><a
+            <iframe height="167" frameborder="0" src="https://itch.io/embed/1448850" width="100%"><a
                 href="https://zirk.itch.io/accellere">AcCELLère by Zirk, GuillaumeCx, Hefka - The Chiptune Catboi,
                 SolenneMarty, Pamounette, Victor Cellerin, Nethos</a></iframe>
           </div>
       </div>
 
-      <div class="row featurette mt-5 mb-5">
+      <div class="row featurette mt-5 mb-5" id="Geckolot">
         <h1>
           Geckolot
         </h1>
@@ -132,57 +197,51 @@
           <p>Durant cette game jam, en tant que développeur le plus expérimenté de notre équipe, j'ai rempli le rôle de développeur senior, en aidant les autres développeurs moins expérimentés sur Unity. Je me suis également occupé de résoudre les problèmes de Git qui sont survenus durant la game jam. Je suis particulièrement fier de ce jeu car j'estime que nous avons réussi à adapter nos ambitions aux différentes compétences présentes dans notre équipe.</p>
         </div>
         <div class="col-md-6">
-          <iframe frameborder="0" src="https://itch.io/embed/1376026" width="552" height="167"><a
+          <iframe frameborder="0" src="https://itch.io/embed/1376026" width="100%" height="167"><a
               href="https://mathieu-coutant.itch.io/geckolot">Geckolot by Mathieu Coutant, Sherlousch, kohuro,
               GuillaumeCx, LeoLeLion, BowRaiders, BiscuitPrime</a></iframe>
         </div>
 
       </div>
 
-      <div class="row featurette mt-5 mb-5">
+      <div class="row featurette mt-5 mb-5" id="MonsterCleaner">
         <h1>
-          Fly me to the Moon*
-        </h1>
-        <h5>
-          *Conditions may apply
-        </h5>
-
-        <h4>Global Game Jam</h4>
-        <h4>28 janvier - 30 janvier 2022</h4>
+          Monster Cleaner
+        </h1>  
+        <h4>Unijam</h4>
+        <h4>18 novembre - 20 novembre 2021</h4>
         <div class="col-md-6">
-          <p><i>Fly me to the Moon*</i> est un dans le cadre de l'Unijam, la game jam organisée conjointement par les écoles d'ingénieurs Télécom SudParis et l'École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE) et l'Institut Universitaire de Technologie de Jeu Vidéo de Bobigny. </p>
-          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+          <p>Monster Cleaner est le résultat de ma seconde participation à l'Unijam, la game jam étudiante organisée conjointement par Télécom SudParis, l'École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE) avec l'Institut Universitaire de Technologie Jeu-Vidéo de Bobigny, et sponsorisée pour cette édition par les studio de jeu vidéo Asobo et Ubisoft Annecy. Le thème de était <b>"One man's trash is another man's treasure"</b> ("Les déchets des uns font le trésors des autres").</p>
+          <p>Ce jeu est un jeu de plateforme en 2D, avec une esthétique en pixel-art dans lequel le joueur doit survivre à des vagues d'ennemis. À la fin de chaque vague, le joueur a le choix d'obtenir une meilleure arme, ou bien de conserver son arme actuelle. S'il change, il lâche son arme à terre, un petit raton laveur passe alors récolter l'arme. Néanmoins, une fois tous les ennemis vaincus, le raton laveur se retourne contre le joueur, équipé de toutes les armes que le joueur lui a laissées.</p>
+          <p>Cette game jam est ma deuxième game jam. J'ai pu y participer après avoir gagné en expérience sur Unity, sur Godot et en programmation en général. J'ai pris le rôle de développeur et ai pu constater ma progression par rapport à la précédente game jam.</p>
         </div>
         <div class="col-md-6">
-          <iframe width="552" height="167" frameborder="0" src="https://itch.io/embed/821801"><a
-              href="https://senydesu.itch.io/fly-me-to-the-moon">Fly me to the moon* conditions may apply by Senydesu,
-              BiscuitPrime, Abel Lefel Fernandez, GuillaumeCx, TheLegendarian, GSabelette, Zobeko, Eliade</a></iframe>
-        </div>
-      </div>
-
-      <div class="row featurette mt-5 mb-5">
-        <div class="col-md-6">
-          <h1>
-            Monster Cleaner
-          </h1>
-          <p>Pouet</p>
-        </div>
-        <div class="col-md-6">
-          <iframe height="167" frameborder="0" src="https://itch.io/embed/1276807" width="552"><a href="https://eliadegames.itch.io/monstercleaner">MonsterCleaner by Eliade, Àre Maturana, RomainSntr, ValouBambou, Jasmin-P, GuillaumeCx</a></iframe>
+          <iframe height="167" frameborder="0" src="https://itch.io/embed/1276807" width="100%"><a href="https://eliadegames.itch.io/monstercleaner">MonsterCleaner by Eliade, Àre Maturana, RomainSntr, ValouBambou, Jasmin-P, GuillaumeCx</a></iframe>
         </div>
     </div>
 
-    <div class="row featurette mt-5 mb-5">
+    <div class="row featurette mt-5 mb-5" id="FlyMeToTheMoon">
+      <h1>
+        Fly me to the Moon*
+      </h1>
+      <h5>
+        *Conditions may apply
+      </h5>
+
+      <h4>Unijam</h4>
+      <h4>12 novembre - 15 novembre 2021</h4>
       <div class="col-md-6">
-        <h1>
-          Neon Dice
-        </h1>
-        <p>Pouet</p>
+        <p>Fly me to the Moon* est un jeu réalisé durant l'Unijam, une game jam étudiante organisée conjointement par Télécom SudParis, l'École Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise (ENSIIE) avec l'Institut Universitaire de Technologie Jeu-Vidéo de Bobigny, et sponsorisée par le studio de jeu vidéo Asobo. Le thème de cette édition 2021 était la citation <b>"Un grand pouvoir implique de grandes responsabilités"</b>, citation attribuée à Théodore Roosevelt ou Benjamin Parker dans Spiderman.</p>
+        <p>Ce jeu est un shoot'em up, et plus particulièrement un bullet hell, dans lequel le joueur pilote un vaisseau assailli de toute part par des aliens au long de son trajet pour essayer d'acheminer des civils sur la Lune. S'il se retrouve submergé, il peut sacrifier un membre de l'équipage pour activer un pouvoir détruisant tous les ennemis présents. Mais ce pouvoir est à utiliser avec parcimonie, si l'on veut avoir des civils à ramener à destination.</p>
+        <p>Cette game jam a  été ma première. J'y ai participé en tant que game designer et level designer. J'ai pu apprendre à y manipuler Unity. Cette game jam a également été l'occasion pour moi de travailler avec des personnes au profil variés, aussi bien étudiants ingénieurs qu'étudiants designers, avec des profils de compétences différents.</p>
+        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
       </div>
       <div class="col-md-6">
-        <iframe height="167" frameborder="0" src="https://itch.io/embed/1620893" width="552"><a href="https://flegmatik-surf.itch.io/neon-dice">Neon dice by Flegmatik_surf, Sulray, Akasuna, GuillaumeCx, Guit0u, BowRaiders, kohuro, pitchinpingouin</a></iframe>
+        <iframe width="100%" height="167" frameborder="0" src="https://itch.io/embed/821801"><a
+            href="https://senydesu.itch.io/fly-me-to-the-moon">Fly me to the moon* conditions may apply by Senydesu,
+            BiscuitPrime, Abel Lefel Fernandez, GuillaumeCx, TheLegendarian, GSabelette, Zobeko, Eliade</a></iframe>
       </div>
-  </div>
+    </div>
 
   </main>
 
