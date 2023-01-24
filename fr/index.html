@@ -67,7 +67,8 @@
     }
   </style>
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="../assets/js/utils.js"></script>
 </head>
 
 <body>
@@ -86,9 +87,9 @@
             <a class="nav-link active fs-4" aria-current="page" href="index.html">Home</a>
             <a class="nav-link fs-4" href="CV Guillaume Caucheteux.pdf">CV</a>
           </ul>
-          <a class="nav-link link-light fs-5" href="../en/index.html">English</a>
+          <a class="nav-link link-light fs-5 btn" onclick="change_language(&quot;en&quot;)">English</a>
           <span class="navbar-text"> | </span>
-          <a class="nav-link text-light fs-5" href="">Français</a>
+          <a class="nav-link text-light fs-5 btn" onclick="change_language(&quot;fr&quot;)">Français</a>
         </div>
         
       </div>
@@ -100,8 +101,8 @@
 
     <section class="py-5 text-center container">
         <div class="col-lg-9 col-md-8 mx-auto" align="center">
-          <h1 class="display-3 fw-light mb-5"><b>Bienvenue!</b></h1>
-          <h4 class="fw-normal lead">Je suis <b>Guillaume Caucheteux</b>, développeur junior, diplômé en 2022 de l'école d'ingénieur <b>Télécom SudParis</b>, où j'ai suivi la voie d'approfondissement <b>Architecture des Systèmes Réparties (ASR)</b>, ainsi qu'étudié en autonomie les cours de la voie d'approfondissement <b>Jeux Vidéo, Interactions et Collaborations Numériques (JIN)</b>.</h4>
+          <h1 class="display-3 fw-light mb-5 translatable" id="tr_BIENVENUE_1"><b>Bienvenue!</b></h1>
+          <h4 class="fw-normal lead translatable" id="tr_BIENVENUE_2">Je suis <b>Guillaume Caucheteux</b>, développeur junior, diplômé en 2022 de l'école d'ingénieur <b>Télécom SudParis</b>, où j'ai suivi la voie d'approfondissement <b>Architecture des Systèmes Réparties (ASR)</b>, ainsi qu'étudié en autonomie les cours de la voie d'approfondissement <b>Jeux Vidéo, Interactions et Collaborations Numériques (JIN)</b>.</h4>
           <h4 class="fw-normal lead">Après avoir créé de nombreux projets liés au jeu vidéo durant ma scolarité et avoir effectué mon stage de fin d'études durant 6 mois sur le jeu vidéo <i>Mage Noir : Infinity</i>, je cherche un premier emploi dans ce domaine en tant que <b>développeur</b>.</h4>
         </div>
     </section>
@@ -212,7 +213,6 @@
         </div>
       </div>
     </div>
-
   </main>
 
   <footer class="text-muted py-5 bg-dark">
@@ -226,9 +226,7 @@
     </div>
   </footer>
 
-
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="../assets/js/main.js"></script>
 
 </body>
 
