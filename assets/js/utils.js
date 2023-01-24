@@ -14,8 +14,12 @@ function init_cookie(){
 }
 
 function change_language(lang){
-    console.log("Je change le langage pour "+lang);
-    document.cookie = "lang="+lang+'; path="/"';
-    window.location.reload();
+    if (document.cookie.split(";").find((row) => row.startsWith('lang='))?.split("=")[1]!=lang){
+        console.log("Je change le langage pour "+lang);
+        document.cookie = "lang="+lang+'; path="/"';
+        window.location.reload();
+    } else {
+        console.log("Je ne change pas la langue")
+    }
 }
 init_cookie();
