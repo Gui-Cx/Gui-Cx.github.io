@@ -69,6 +69,8 @@
 
   <!-- Custom styles for this template -->
   <link href="./assets/css/list-groups.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="./assets/js/utils.js"></script>
 
 </head>
 
@@ -89,9 +91,9 @@
             <a class="nav-link fs-4"
               href="CV Guillaume Caucheteux.pdf">CV</a>
           </ul>
-          <a class="nav-link link-light fs-5" href="../en/index.html">English</a>
+          <a class="nav-link link-light fs-5 btn" onclick="change_language(&quot;en&quot;)">English</a>
           <span class="navbar-text"> | </span>
-          <a class="nav-link text-light fs-5" href="">Français</a>
+          <a class="nav-link text-light fs-5 btn" onclick="change_language(&quot;fr&quot;)">Français</a>
         </div>
 
       </div>
@@ -103,6 +105,24 @@
     <div class="container">
       <div class="container marketing">
         
+        <div class="row featurette mt-5 mb-5" id="TSP" align="justify">
+          <h1>
+            Télécom SudParis
+          </h1>
+          <h2 class="translatable" id="tr_formation_ASR_1">2020 - 2021 : Voie d'approfondissement <b>Architecture des Systèmes Répartis</b></h2>
+          <div class="col-md-6">
+            <h4 class="translatable" id="tr_ASR_CSC5001_title">Systèmes Hautes Performance</h4>
+            <ul>
+              <h6 class="translatable" id="tr_ASR_CSC5001_1">· Algorithmique parallèle</h6>
+              <h6 class="translatable" id="tr_ASR_CSC5001_2">· MPI</h6>
+              <h6 class="translatable" id="tr_ASR_CSC5001_3">· OpenMP</h6>
+              <h6 class="translatable" id="tr_ASR_CSC5001_4">· Programmation GPU avec CUDA</h6>
+              <h6 class="translatable" id="tr_ASR_CSC5001_5">· Analyse de performance avec EZTrace</h6>
+            </ul>
+            <h4 class="translatable" id="tr_ASR_CSC5002_title">Middleware / Intergiciels</h4>
+          </div>
+        </div>
+
       </div>  
     </div>
 
@@ -121,8 +141,7 @@
 
 
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
-
-
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
