@@ -43,14 +43,41 @@ let translation = {
 
   "tr_back_to_top": ["Retourner en haut de la page", "Back to the top"],
 
-  "tr_formation_ASR_1": ["2020 - 2021 : Voie d'approfondissement <b>Architecture des Systèmes Répartis</b>", "2020 - 2021 : Major <b>Distributed System Architecture</b>"],
+  "tr_formation_ASR_1": ["2020 - 2021 : Voie d'approfondissement <b>Architecture des Systèmes Répartis</b>", 
+      "2020 - 2021 : Major <b>Distributed Systems Architecture</b>"],
   "tr_ASR_CSC5001_title": ["Systèmes Hautes Performance", "High Performance Systems"],
   "tr_ASR_CSC5001_1": ["Algorithmique parallèle", "Parallel Algorithmics"],
   "tr_ASR_CSC5001_2": ["MPI", "MPI"],
   "tr_ASR_CSC5001_3": ["OpenMP", "OpenMP"],
   "tr_ASR_CSC5001_4": ["Programmation GPU avec CUDA", "GPU Programming with CUDA"],
   "tr_ASR_CSC5001_5": ["Analyse de performance avec EZTrace", "Performance analysis with EZTrace"],
-  "tr_ASR_CSC5002_title": ["Middleware / Intergiciels", "Middleware"]
+  "tr_ASR_CSC5001_6": ["Projet : Parallélisation et optimisation du problème à n-corps", "Project : Parallelization of the n-body problem"],
+
+  "tr_ASR_CSC5002_title": ["Middleware et architecture logicielle pour applications réparties ", "Middleware and software architecture for distributed applications"],
+  "tr_ASR_CSC5002_1": ["MQTT", "MQTT"],
+  "tr_ASR_CSC5002_2": ["RabbitMQ", "RabbitMQ"],
+  "tr_ASR_CSC5002_3": ["JavaEE", "JavaEE"],
+  "tr_ASR_CSC5002_4": ["Étude de différents patrons de conception d'applications réparties", "Study of various design patterns for distributed applications"],
+  "tr_ASR_CSC5002_5": ["Projet : Réalisation d'une application de visite groupées où les utilisateurs partagent leur position et ont un accès à un messagerie instantanée.", "Projet : Creation of an application to make a group visit in which users can share their position and may access an instant messenger"],
+
+  "tr_ASR_CSC5003_title":["Web sémantique et infrastructures pour le big data", "Semantic Web and Big Data Architecture"],
+  "tr_ASR_CSC5003_1":["Scala", "Scala"],
+  "tr_ASR_CSC5003_2":["Hadoop", "Hadoop"],
+  "tr_ASR_CSC5003_3":["Le framework MapReduce", "The MapReduce framework"],
+  "tr_ASR_CSC5003_4":["Kafka", "Kafka"],
+  "tr_ASR_CSC5003_5":["Spark", "Spark"],
+  "tr_ASR_CSC5003_6":["Études d'ontologies", "Study of ontologies"],
+  "tr_ASR_CSC5003_7":["Projet : Prendre une grande base de donnée de notre choix et mener une étude dessus.", "To be translated"],
+  "tr_ASR_CSC5003_8":["Projet : Prendre une grande base de donnée et mener une étude dessus.", "To be translated"],
+
+
+
+  "tr_ASR_CSC5004_title":["",""],
+  "tr_ASR_CSC5004_1":["",""],
+  "tr_ASR_CSC5004_2":["",""],
+  "tr_ASR_CSC5004_3":["",""],
+  "tr_ASR_CSC5004_4":["",""],
+  "tr_ASR_CSC5004_5":["",""]
 }
 // Translation est un dictionnaire
 
