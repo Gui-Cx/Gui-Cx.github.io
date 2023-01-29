@@ -43,7 +43,7 @@ let translation = {
 
   "tr_back_to_top": ["Retourner en haut de la page", "Back to the top"],
 
-  "tr_formation_ASR_1": ["2020 - 2021 : Voie d'approfondissement <b>Architecture des Systèmes Répartis</b>", 
+  "tr_formation_ASR_1": ["2021 - 2022 : Voie d'approfondissement <b>Architecture des Systèmes Répartis</b>", 
       "2020 - 2021 : Major <b>Distributed Systems Architecture</b>"],
   "tr_ASR_CSC5001_title": ["Systèmes Hautes Performance", "High Performance Systems"],
   "tr_ASR_CSC5001_1": ["Algorithmique parallèle", "Parallel Algorithmics"],
@@ -67,17 +67,17 @@ let translation = {
   "tr_ASR_CSC5003_4":["Kafka", "Kafka"],
   "tr_ASR_CSC5003_5":["Spark", "Spark"],
   "tr_ASR_CSC5003_6":["Études d'ontologies", "Study of ontologies"],
-  "tr_ASR_CSC5003_7":["Projet : Prendre une grande base de donnée de notre choix et mener une étude dessus.", "To be translated"],
-  "tr_ASR_CSC5003_8":["Projet : Prendre une grande base de donnée et mener une étude dessus.", "To be translated"],
+  "tr_ASR_CSC5003_7":["Projet : Prendre une base de donnée de notre choix et mener une étude dessus : choisir un ensemble de données, définir un objectif, étudier les données, les nettoyer, les trier et appliquer des algorithmes dessus pour tirer des conclusions et rédiger un bref rapport.", 
+    "Project : Take a dataset of our choice and carry out a study of it : choose a dataset, define an objective, study the data, clean the dataset, select the corresponding data and apply algorithms on it in order to draw conclusions and write a brief report."],
+  "tr_ASR_CSC5003_8":["Projet : Choisir une base de donnée et créer une ontologie basée dessus, et générer des protocoles adaptés en tenant compte des données.", 
+  "Project : Choose a dataset and build an ontology around it, and generate protocoles suited to the data"],
 
+  "tr_ASR_CSC5004_title":["Infrastructures pour le Cloud","Cloud infrastructures"],
+  "tr_ASR_CSC5004_1":["Docker","Docker"],
+  "tr_ASR_CSC5004_2":["Kubernetes","Kubernetes"],
+  "tr_ASR_CSC5004_3":["La notion de virtualisation","Virtualization"],
 
-
-  "tr_ASR_CSC5004_title":["",""],
-  "tr_ASR_CSC5004_1":["",""],
-  "tr_ASR_CSC5004_2":["",""],
-  "tr_ASR_CSC5004_3":["",""],
-  "tr_ASR_CSC5004_4":["",""],
-  "tr_ASR_CSC5004_5":["",""]
+  "tr_formation_JIN_1":["2021 - 2022 : Cours étudiés en autonomie : <b>Jeux vidéo, Interactions et Collaborations Numériques (JIN)</b>","2021 - 2022 : Lessons studied in autonomy : <b>Video Games, Digital Cooperations and Interactions</b>"]
 }
 // Translation est un dictionnaire
 
