@@ -9,6 +9,7 @@ switch (cur_language) {
 
 // Absolutely horrible practice, but I don't have time to make something to read local files, as this requires a local server to test on my own and the goal is to have something that works rather than something that is right.
 let translation = {
+  "tr_index_CV":["CV","Résumé"],
   "tr_BIENVENUE_1": ["Bienvenue !", "Welcome !"],
   "tr_BIENVENUE_2": ["Je suis <b>Guillaume Caucheteux</b>, développeur junior, diplômé en 2022 de l'école d'ingénieur <b>Télécom SudParis</b>, où j'ai suivi la voie d'approfondissement <b>Architecture des Systèmes Réparties (ASR)</b>, ainsi qu'étudié en autonomie les cours de la voie d'approfondissement <b>Jeux Vidéo, Interactions et Collaborations Numériques (JIN)</b>.",
     "I am <b>Guillaume Caucheteux</b>, a French junior developer. In 2022, I got the engineer diploma from the french engineering school <b>Télécom SudParis</b>, in which I followed the courses from the major <b>Distributed Systems Architecture (ASR)</b>, as well as studied in autonomy the courses from the major <b>Video Games and Digital Interactions and Collaborations (JIN).</b> major."],
@@ -77,7 +78,35 @@ let translation = {
   "tr_ASR_CSC5004_2":["Kubernetes","Kubernetes"],
   "tr_ASR_CSC5004_3":["La notion de virtualisation","Virtualization"],
 
-  "tr_formation_JIN_1":["2021 - 2022 : Cours étudiés en autonomie : <b>Jeux vidéo, Interactions et Collaborations Numériques (JIN)</b>","2021 - 2022 : Lessons studied in autonomy : <b>Video Games, Digital Cooperations and Interactions</b>"]
+  "tr_formation_JIN_1":["2021 - 2022 : Cours étudiés en autonomie : <b>Jeux vidéo, Interactions et Collaborations Numériques (JIN)</b>","2021 - 2022 : Lessons studied in autonomy : <b>Video Games, Digital Cooperations and Interactions</b>"],
+  
+  "tr_JIN_cpp_title":["Développement C++","C++ Programming"],
+  "tr_JIN_cpp_1":["Bases du C++","C++ Basics"],
+  "tr_JIN_cpp_2":["Vecteurs","Vectors"],
+  "tr_JIN_cpp_3":["Programmation orientée objet","Oriented Object Programming"],
+  "tr_JIN_cpp_4":["Gestion de la mémoire","Memory handling"],
+  "tr_JIN_cpp_5":["Pointeurs intelligents","Smart pointers"],
+  "tr_JIN_cpp_6":["Bibliothèque SFML (Simple and Fast Multimedia Library)","The SFML Library (Simple and Fast Multimedia Library)"],
+  "tr_JIN_cpp_7":["Cmake","Cmake"],
+
+  "tr_JIN_maths_title":["Outils mathématiques pour le jeu vidéo","Mathematical tools for video games"],
+  "tr_JIN_maths_1":["Produit vectoriel, mixte, scalaire","Vectorial, Scalar and Mixt products"],
+  "tr_JIN_maths_2":["Quaternions","Quaternions"],
+  "tr_JIN_maths_3":["Projection, Translation, Mise à l'échelle, Rotation","Projection, Translation, Rotation, Scaling"],
+  "tr_JIN_maths_4":["Topologie","Topology"],
+  "tr_JIN_maths_5":["Détection de collision (Bounding Box, Enveloppe Convexe...)","Collision detection (Bounding Box, Convex Hull...)"],
+  "tr_JIN_maths_6":["Variétés (manifold)","Manifolds"],
+  "tr_JIN_maths_7":["Graphe de Voronoï-Dirichlet","Voronoï-Dirichlet Graph"],
+
+  "tr_CSC4253_title":["Architecture des moteurs de jeux","Game Engine Architecture"],
+  "tr_CSC4253_1":["Programmation orientée composants","Component-oriented programming"],
+  "tr_CSC4253_2":["Calcul vectoriel","Vector calculations"],
+  "tr_CSC4253_3":["Lancé de rayon, gestion des collisions, physique avancée","Ray casting, collision handling, advanced physics"],
+  "tr_CSC4253_4":["Coroutines et animations","Coroutines and animations"],
+  "tr_CSC4253_5":["Prefab Imbriqué","Nested prefabs"],
+  "tr_CSC4253_6":["Réflexion sur les pratiques d'UI et d'UX","Reflections on UI and UX practices"],
+  "tr_CSC4253_7":["Analyse de performances, optimisation","Performance analysis, optimisation"],
+  "tr_CSC4253_8":["Patrons de conceptions classique","Classic design patterns"]
 }
 // Translation est un dictionnaire
 
@@ -85,8 +114,8 @@ let translation = {
 $(".translatable").html((index) => {
     // .text est une méthode qui prends en argument une fonction
     // Cette fonction doit renvoyer un texte, qui sera le nouveau texte l'intérieur de cette div
-    console.log($(".translatable")[index].id)
-    console.log($(cur_language))
+    // console.log($(".translatable")[index].id)
+    // console.log($(cur_language))
     let myId = $(".translatable")[index].id
     // myId est l'identifiant de notre div
     return translation[myId][id_language]

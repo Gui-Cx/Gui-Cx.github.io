@@ -22,4 +22,12 @@ function change_language(lang){
         console.log("Je ne change pas la langue")
     }
 }
+
+function load_CV(){
+    if (document.cookie.split(";").find((row) => row.startsWith('lang='))?.split("=")[1]=="en"){
+        window.location = "./CV/Resume Guillaume Caucheteux.pdf"
+    } else if (document.cookie.split(";").find((row) => row.startsWith('lang='))?.split("=")[1]=="fr"){
+        window.location = "./CV/CV Guillaume Caucheteux.pdf";
+    }
+}
 init_cookie();
