@@ -8,7 +8,7 @@
   <meta name="author" content="Gui-Cx, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.108.0">
   <title>Gui-Cx Portfolio</title>
-  
+
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
 
 
@@ -69,6 +69,7 @@
 
   <!-- Custom styles for this template -->
   <link href="./assets/css/list-groups.css" rel="stylesheet">
+  <link href="./assets/css/carousel.css" rel="stylesheet">
 
 </head>
 
@@ -86,8 +87,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <a class="nav-link active fs-4" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link fs-4"
-              href="CV Guillaume Caucheteux.pdf">CV</a>
+            <a class="nav-link fs-4" href="CV Guillaume Caucheteux.pdf">CV</a>
           </ul>
           <a class="nav-link link-light fs-5" href="../en/index.html">English</a>
           <span class="navbar-text"> | </span>
@@ -100,12 +100,95 @@
   </header>
 
   <main>
-    <div class="container">
-        
-      <div class="container marketing">
-        <div class="list-group mt-5 mb-5 mx-auto w-50">
-          
+
+    <div class="container marketing">
+
+      <h1 class="text-center">Tous mes projets, scolaires et associatifs</h1>
+      <div class="list-group mt-5 mb-5 mx-auto w-50">
+        <h3 class="text-center">Sommaire</h3>
+        <a href="#Zefxis" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h5 class="mb-0">Projet de fin d'étude : Zefxis</h5>
+              <p class="mb-0 opacity-75">Septembre 2021 - Février 2022</p>
+            </div>
+          </div>
+        </a>
+        <a href="#TankAFaire" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true">
+          <div class="d-flex gap-2 w-100 justify-content-between">
+            <div>
+              <h5 class="mb-0">Tank à Faire</h5>
+              <p class="mb-0 opacity-75">Juin 2021 - Octobre 2021</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="row featurette mt-5 mb-5" id="Zefxis" align="justify">
+        <h1>
+          Projet de fin d'étude : Zefxis
+        </h1>
+        <h4>septembre 2021 - février 2022</h4>
+        <div class="col-md-7">
+          <h5>Description</h5>
+          <p>Zefxis est un projet créé autours de la thématique des Objects Connectés. La problématique du projet est la
+            suivante :</p>
+          <p>Soient différents écosystèmes d'objets connectés. Chaque écosystème a un ensemble d'objets connectés qui
+            sont agencés de manière à générer, échanger et traiter des données. Les écosystèmes sont organisés selon un
+            patron de conception "éditeur-abonnés", avec un courtier au centre de chaque écosystème. Chaque écosystème a
+            sa propre architecture, et ses propres normes et protocoles. On veut que ces différents écosystèmes puissent
+            échanger entre eux différentes données. Quelle(s) architecture(s) employer au sein de chaque écosystème et
+            entre ces écosystèmes pour assurer une interopérabilité ?</p>
+          <p>Une première partie du problème est de pouvoir configurer des environnements facilement : on souhaite créer
+            un scenario où on définit via un fichier les différents écosystèmes, avec les différents objets, les
+            courtiers, les connexions entre ces acteurs et les connexions entre écosystèmes. Cette partie a été faite à
+            l'aide d'un script Bash qui crée les écosystèmes, sous la forme de conteneurs Docker qui représentent le
+            broker et auxquels des script Java vont se connecter pour échanger des messages à la manière ordonnée par le
+            scénario.</p>
+          <p>La seconde partie du problème a consisté à tester différentes architectures pour gérer les problèmes de
+            communication d'un écosystème à un autre : comment transmettre les données d'un écosystème utilisant un
+            certain courtier (ex : MQTT) vers un autre écosystème utilisant un courtier différent (ex : RabbitMQ) ? De
+            la même manière, un écosystème formate ses données d'une certaine manière (ex : JSON selon un format propre
+            à l'écosystème) et qu'il souhaite envoyer ses données à un autre écosystème qui les formate d'une autre
+            manière (ex : selon le standard NGSI-LD), comment gérer la traduction ?</p>
+          <p>Cette seconde partie a constitué le cœur du projet, et a été riche en enseignements pour mon partenaire et
+            moi : nous avons pu explorer l'état de l'art sur le sujet, découvrir des normes de formatage visant à
+            couvrir les différents domaines. Cette partie nous a également permis de gérer différentes architectures
+            pour résoudre les problèmes, en changeant la charge de la tâche de traduction à l’émetteur, au récepteur ou
+            bien entre deux.</p>
+          <h5>Apports</h5>
+          <p>Ce projet a été pour moi l'occasion de mener un travail de recherche et d'expérimenter différentes
+            architectures pour élaborer un outil sur lequel les années suivantes pourront s'appuyer.</p>
+          <p>Il m'a également permis d'apprendre à manipuler des technologies essentielles, telles que les Docker, avec
+            les dockerfile et les instructions "docker compose". En outre, j'ai pu manipuler différents systèmes de
+            courtiers comme EMQX, RabbitMQ et MQTT, et utiliser des outils comme Paho pour assurer la communication
+            entre Java et MQTT.</p>
         </div>
+        <!-- <div class="col-md-5">
+            <p>La seconde partie du problème a consisté à tester différentes architectures pour gérer les problèmes de traduction : comment transmettre les données d'un </p>
+          </div> -->
+      </div>
+
+      <div class="row featurette mt-5 mb-5" id="TankAFaire" align="justify">
+        <h1>
+          Projet MINTech : Tank-à-faire
+        </h1>
+        <h4>juin 2021 - octobre 2021</h4>
+        <div class="col-md-7">
+          <h5>Contexte</h5>
+          <p>Tous les trois ans, MiNET, l'association de réseau de Télécom SudParis, organise à l'aide de ses clubs affiliés une grande soirée, au cours de laquelle elle propose différentes attractions variées. À ce titre, le club de création de jeux de Télécom SudParis, le CELL, a travaillé durant l'été sur un jeu sur le thème de la soirée : "Steampunk".</p>
+          <h5>Description du jeu</h5>
+          <p><b>Tank à Faire</b> propose à deux joueurs de s'affronter dans une arène, après avoir assemblé leur tank en choisissant chaque partie du tank parmi les différents éléments proposés (chenille, tourelle, carlingue...). Chaque partie modifie différentes caractéristique du tank, tels que les dégâts, la vitesse de déplacement, la forme du tir principal et du tir secondaire...</p>
+          <h5>Développement</h5>
+          <p>Nous étions 13 personnes à travailler sur ce projet. Nous avons pris la décision de travailler sur Godot pour créer le jeu <b>Tank à Faire</b>, car nous souhaitions découvrir Godot. Tous les assets de ce jeu ont été faits par nos soins, des modèles 3D aux effets sonores et aux musiques, en passant par l'interface en pixel art.</p>
+          <h5>Rôle</h5>
+          <p>J'ai participé à ce projet en tant que <b>programmeur</b> et <b><i>game designer</i></b>. Cette expérience en tant que <i>game designer</i> m'a permis de travailler en équipe pour choisir quelles fonctionnalités apporter au jeu, mais aussi rédiger des instructions claires avec des schémas pour aider les autres participants à avancer durant le projet.</p>
+        </div>
+        <!-- <div class="col-md-5">
+            <p>La seconde partie du problème a consisté à tester différentes architectures pour gérer les problèmes de traduction : comment transmettre les données d'un </p>
+          </div> -->
+      </div>
 
     </div>
 
