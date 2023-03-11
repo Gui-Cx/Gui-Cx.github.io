@@ -140,7 +140,10 @@ let translation = {
     "We were 13 persons working on this project. We made the decision to work with Godot to create the game <b>Tank à Faire</b>, as we all wanted to learn Godot. All the game's assets were made by us, from the 3D models to the sound effects and the music, as well as the pixel-art UI."],
   "tr_proj_tankaf_role":["Rôle","Role"],
   "tr_proj_tankaf_4":["J'ai participé à ce projet en tant que <b>programmeur</b> et <b><i>game designer</i></b>. Cette expérience en tant que <i>game designer</i> m'a permis de travailler en équipe pour choisir quelles fonctionnalités apporter au jeu, mais aussi rédiger des instructions claires avec des schémas pour aider les autres participants à avancer durant le projet.",
-    "I participated in this project as a <b>programmer</b> and a <b>game designer</b>. This experience as a game designer allowed me to work in a team to chose the functionalities to add to the game, but also to write clear instructions with schematics that the other participants can refer to all along the project"]
+    "I participated in this project as a <b>programmer</b> and a <b>game designer</b>. This experience as a game designer allowed me to work in a team to chose the functionalities to add to the game, but also to write clear instructions with schematics that the other participants can refer to all along the project"],
+  "tr_proj_cassiop_title":["Projet Cassiopée : Je Suis Ma Ville", "Cassiopée Project : Je Suis Ma Ville"],
+  "tr_proj_cassiop_dates":["Janvier 2021 - Juin 2021", "January 2021 - June 2021"]
+
 }
 // Translation est un dictionnaire
 
